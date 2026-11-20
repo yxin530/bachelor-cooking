@@ -81,6 +81,7 @@ export default function App() {
 
       <View style={styles.rootContainer}>
         <ScrollView
+          key={screen === 'detail' ? `detail-${selectedRecipe?.id}` : screen}
           contentContainerStyle={[
             styles.scrollContent,
             screen === 'detail' ? styles.detailScrollContent : styles.tabScrollContent,

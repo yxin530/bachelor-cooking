@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "bachelor-cooking",
+    "name": "Bachelor Cooking Recipes",
     "slug": "bachelor-cooking",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -15,4 +15,3 @@
     }
   }
 }
-
