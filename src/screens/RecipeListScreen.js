@@ -43,7 +43,7 @@ export default function RecipeListScreen({
           onChangeText={onSearchChange}
           style={styles.searchInput}
           autoCorrect={false}
-          clearButtonMode="while-editing"
+          clearButtonMode="never"
         />
         {searchQuery.length > 0 && (
           <TouchableOpacity

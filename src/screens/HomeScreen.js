@@ -24,6 +24,7 @@ export default function HomeScreen({ onNavigate, onOpenRecipe, onSelectCategory 
             Bachelor<Text style={styles.peachDot}>.</Text>
           </Text>
           <Text style={styles.brandTitle}>Cooking</Text>
+          <Text style={styles.brandTitle}>Recipes</Text>
         </View>
 
         <View style={styles.profileBadge}>
@@ -48,7 +49,7 @@ export default function HomeScreen({ onNavigate, onOpenRecipe, onSelectCategory 
           onPress={() => onNavigate('list')}
           activeOpacity={0.85}
         >
-          <Text style={styles.heroBtnText}>Explore All Recipes</Text>
+          <Text style={styles.heroBtnText}>View Recipes</Text>
           <Ionicons name="arrow-forward" size={16} color={COLORS.ink} />
         </TouchableOpacity>
 
