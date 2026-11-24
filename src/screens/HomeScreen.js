@@ -9,6 +9,7 @@ import {
 import { Ionicons } from '@expo/vector-icons';
 import { COLORS, SHADOWS } from '../constants/colors';
 import { CATEGORIES, KITCHEN_TIPS, RECIPES } from '../constants/recipes';
+import RecipeImage from '../components/RecipeImage';
 
 export default function HomeScreen({ onNavigate, onOpenRecipe, onSelectCategory }) {
   const featured = RECIPES.slice(0, 3);
@@ -106,7 +107,7 @@ export default function HomeScreen({ onNavigate, onOpenRecipe, onSelectCategory 
             activeOpacity={0.88}
           >
             <View style={styles.featuredEmojiWrap}>
-              <Text style={styles.featuredEmoji}>{recipe.emoji}</Text>
+              <RecipeImage recipe={recipe} imageStyle={styles.featuredImage} emojiStyle={styles.featuredEmoji} />
             </View>
             <Text style={styles.featuredCategory}>
               {recipe.category.toUpperCase()}
@@ -288,6 +289,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     marginBottom: 12,
+    overflow: 'hidden',
+  },
+  featuredImage: {
+    width: '100%',
+    height: '100%',
   },
   featuredEmoji: {
     fontSize: 30,

@@ -17,6 +17,8 @@ export const RECIPES = [
     servings: 2,
     calories: '420 kcal',
     emoji: '🍗',
+    image:
+      'https://images.unsplash.com/photo-1601625618639-b989333a9589?w=900&q=70&auto=format&fit=crop',
     color: '#F5C09D',
     description:
       'Golden chicken breasts, tender broccoli florets, and a luscious garlic-butter pan sauce — made in one skillet with practically zero cleanup.',
@@ -45,6 +47,8 @@ export const RECIPES = [
     servings: 2,
     calories: '510 kcal',
     emoji: '🍝',
+    image:
+      'https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg?auto=compress&cs=tinysrgb&w=900',
     color: '#F2A58D',
     description:
       'Silky, comforting pasta coated in a rich tomato cream sauce with fragrant garlic and fresh basil. Ready faster than takeout delivery.',
@@ -75,6 +79,8 @@ export const RECIPES = [
     servings: 2,
     calories: '380 kcal',
     emoji: '🥗',
+    image:
+      'https://images.pexels.com/photos/3297367/pexels-photo-3297367.jpeg?auto=compress&cs=tinysrgb&w=900',
     color: '#B9D991',
     description:
       'Golden, crispy pan-seared tofu cubes tossed in a sweet-savory homemade teriyaki glaze over steamed rice and crunchy veggies.',
@@ -105,6 +111,8 @@ export const RECIPES = [
     servings: 2,
     calories: '350 kcal',
     emoji: '🥦',
+    image:
+      'https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=1913&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D',
     color: '#A8D5A2',
     description:
       'Lean chicken strips and crunchy colourful vegetables tossed in a light garlic-soy sauce. A quick, protein-packed dinner in one wok.',
@@ -134,6 +142,8 @@ export const RECIPES = [
     servings: 1,
     calories: '340 kcal',
     emoji: '🍳',
+    image:
+      'https://images.pexels.com/photos/824635/pexels-photo-824635.jpeg?auto=compress&cs=tinysrgb&w=900',
     color: '#F2D17B',
     description:
       'Crisp toasted sourdough generously layered with citrusy mashed avocado and topped with a golden, runny sunny-side egg.',
@@ -162,6 +172,8 @@ export const RECIPES = [
     servings: 1,
     calories: '310 kcal',
     emoji: '🥞',
+    image:
+      'https://images.unsplash.com/photo-1759572230252-454d1ad18e93?w=900&q=70&auto=format&fit=crop',
     color: '#F6C98A',
     description:
       'Soft, naturally sweet pancakes made from just banana, eggs, and oats. No flour, no fuss — the easiest weekend breakfast.',
@@ -188,6 +200,8 @@ export const RECIPES = [
     servings: 2,
     calories: '460 kcal',
     emoji: '🌮',
+    image:
+      'https://images.unsplash.com/photo-1673990349292-ed2dfa7988c9?w=900&q=70&auto=format&fit=crop',
     color: '#E9B86B',
     description:
       'Crispy, golden griddled flour tortillas bursting with melted cheddar, sautéed sweet peppers, and sweetcorn. Perfect for late-night cravings.',
@@ -216,6 +230,8 @@ export const RECIPES = [
     servings: 2,
     calories: '430 kcal',
     emoji: '🍚',
+    image:
+      'https://images.unsplash.com/photo-1609570324378-ec0c4c9b6ba8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D',
     color: '#EFC27A',
     description:
       'Fluffy fried rice with scrambled egg, sweet peas, and spring onion. The perfect way to turn leftover rice into a warm, filling meal.',
@@ -244,6 +260,8 @@ export const RECIPES = [
     servings: 1,
     calories: '290 kcal',
     emoji: '🍫',
+    image:
+      'https://images.unsplash.com/photo-1613323885553-4b069992362d?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D',
     color: '#C99B82',
     description:
       'Warm, gooey, molten chocolate cake prepared and cooked in under two minutes inside your favorite coffee mug. Zero baking skills required.',
@@ -274,6 +292,8 @@ export const RECIPES = [
     servings: 4,
     calories: '180 kcal',
     emoji: '🍪',
+    image:
+      'https://images.unsplash.com/photo-1549007994-cb92caebd54b?w=900&q=70&auto=format&fit=crop',
     color: '#D4A98C',
     description:
       'Chewy chocolate and peanut butter bites made with just a few pantry staples. No oven needed — simply mix, roll, and chill.',

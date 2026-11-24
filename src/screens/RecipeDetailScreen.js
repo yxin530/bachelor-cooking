@@ -8,6 +8,7 @@ import {
 import { Ionicons } from '@expo/vector-icons';
 import { COLORS, SHADOWS } from '../constants/colors';
 import Header from '../components/Header';
+import RecipeImage from '../components/RecipeImage';
 
 export default function RecipeDetailScreen({
   recipe,
@@ -34,7 +35,7 @@ export default function RecipeDetailScreen({
 
       {/* Visual Art Hero Box */}
       <View style={[styles.heroArt, { backgroundColor: recipe.color }]}>
-        <Text style={styles.heroEmoji}>{recipe.emoji}</Text>
+        <RecipeImage recipe={recipe} imageStyle={styles.heroImage} emojiStyle={styles.heroEmoji} />
       </View>
 
       {/* Title & Metadata */}
@@ -187,7 +188,12 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     borderWidth: 1,
     borderColor: COLORS.border,
+    overflow: 'hidden',
     ...SHADOWS.soft,
+  },
+  heroImage: {
+    width: '100%',
+    height: '100%',
   },
   heroEmoji: {
     fontSize: 90,

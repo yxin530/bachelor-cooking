@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { COLORS, SHADOWS } from '../constants/colors';
+import RecipeImage from './RecipeImage';
 
 export default function RecipeCard({ recipe, isSaved, onToggleSave, onOpen }) {
   if (!recipe) return null;
@@ -14,7 +15,7 @@ export default function RecipeCard({ recipe, isSaved, onToggleSave, onOpen }) {
     >
       {/* Visual Art / Emoji Banner */}
       <View style={[styles.artBanner, { backgroundColor: recipe.color }]}>
-        <Text style={styles.artEmoji}>{recipe.emoji}</Text>
+        <RecipeImage recipe={recipe} imageStyle={styles.artImage} emojiStyle={styles.artEmoji} />
         <TouchableOpacity
           style={styles.saveBtn}
           onPress={(e) => {
@@ -79,7 +80,7 @@ const styles = StyleSheet.create({
     marginBottom: 16,
     overflow: 'hidden',
     flexDirection: 'row',
-    minHeight: 126,
+    height: 140,
     borderWidth: 1,
     borderColor: COLORS.border,
     ...SHADOWS.soft,
@@ -89,6 +90,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     position: 'relative',
+  },
+  artImage: {
+    ...StyleSheet.absoluteFillObject,
+    width: '100%',
+    height: '100%',
   },
   artEmoji: {
     fontSize: 46,
